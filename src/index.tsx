@@ -1,5 +1,4 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
+import HoverCard from './components/HoverCard';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+export default HoverCard;
+export { default as Card } from './components/HoverCard/Card';
