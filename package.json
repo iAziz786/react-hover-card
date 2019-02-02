@@ -22,9 +22,9 @@
     "start": "react-scripts start",
     "rollup": "rollup",
     "eslint": "eslint",
-    "bundle": "yarn rollup --config",
+    "build": "yarn rollup --config",
     "prettier": "prettier \"**/*.+(js|jsx|json|css|html|yml|yaml|less|sass|ts|tsx|graphql|md|mdx|vue)\"",
-    "prepublish": "yarn build"
+    "prepare": "yarn build"
   },
   "eslintConfig": {
     "extends": "react-app"
