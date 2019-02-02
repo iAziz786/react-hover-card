@@ -1,15 +1,16 @@
 module.exports = {
   env: {
-    browser: true
+    browser: true,
+    node: true
   },
-  extends: ['eslint:recommended', 'eslint-config-prettier'],
+  extends: ["eslint:recommended", "eslint-config-prettier"],
   parserOptions: {
     ecmaFeatures: {
       experimentalObjectRestSpread: true,
       jsx: true
     },
     ecmaVersion: 2018,
-    sourceType: 'module'
+    sourceType: "module"
   },
-  plugins: ['react']
-};
+  plugins: ["react"]
+}
