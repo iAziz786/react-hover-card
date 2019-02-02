@@ -21,7 +21,10 @@
   "scripts": {
     "start": "react-scripts start",
     "rollup": "rollup",
-    "bundle": "rm -rf dist && yarn rollup --config"
+    "eslint": "eslint",
+    "bundle": "rm -rf dist && yarn rollup --config",
+    "prettier": "prettier \"**/*.+(js|jsx|json|css|html|yml|yaml|less|sass|ts|tsx|graphql|md|mdx|vue)\"",
+    "prepublish": "yarn build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -36,6 +39,10 @@
     "@babel/core": "^7.2.2",
     "@babel/preset-env": "^7.3.1",
     "@babel/preset-react": "^7.0.0",
-    "@babel/preset-typescript": "^7.1.0"
+    "@babel/preset-typescript": "^7.1.0",
+    "eslint": "^5.13.0",
+    "eslint-config-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.12.4",
+    "prettier": "^1.16.3"
   }
 }
