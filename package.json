@@ -29,6 +29,16 @@
   "eslintConfig": {
     "extends": "react-app"
   },
+  "license": "MIT",
+  "author": {
+    "name": "Mohammad Aziz",
+    "email": "azizforwork@gmail.com",
+    "url": "https://aziz.js.org"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:iAziz786/react-hover-card.git"
+  },
   "browserslist": [
     ">0.2%",
     "not dead",
