@@ -22,7 +22,7 @@
     "start": "react-scripts start",
     "rollup": "rollup",
     "eslint": "eslint",
-    "build": "yarn rollup --config",
+    "build": "rm -rf dist && yarn rollup --config",
     "prettier": "prettier \"**/*.+(js|jsx|json|css|html|yml|yaml|less|sass|ts|tsx|graphql|md|mdx|vue)\"",
     "prepare": "yarn build"
   },
