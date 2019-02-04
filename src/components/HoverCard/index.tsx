@@ -20,18 +20,13 @@ interface Props {
 let mouseHoverEvent: NodeJS.Timeout
 
 function onMouseEnter(
-  hovered: boolean,
   delay: number,
   setHoverState: (hovered: boolean) => void
 ) {
   mouseHoverEvent = setTimeout(() => setHoverState(true), delay)
 }
 
-function onMouseLeave(
-  hovered: boolean,
-  delay: number,
-  setHoverState: (hovered: boolean) => void
-) {
+function onMouseLeave(setHoverState: (hovered: boolean) => void) {
   if (mouseHoverEvent) {
     clearTimeout(mouseHoverEvent)
   }
@@ -42,8 +37,8 @@ function HoverCard(props: Props) {
   const [hovered, setHoverState] = useState(false)
   return (
     <Container
-      onMouseEnter={() => onMouseEnter(hovered, props.delay, setHoverState)}
-      onMouseLeave={() => onMouseLeave(hovered, props.delay, setHoverState)}
+      onMouseEnter={() => onMouseEnter(props.delay, setHoverState)}
+      onMouseLeave={() => onMouseLeave(setHoverState)}
     >
       <Content>{props.children}</Content>
       {hovered && props.hoverContent()}
